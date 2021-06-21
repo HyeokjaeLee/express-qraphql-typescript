@@ -1,18 +1,23 @@
 {
-  "name": "express-qraphql-typescirpt",
-  "version": "0.0.0",
-  "private": true,
+  "name": "express-qraphql-typescript",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./src/app.ts",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon --exec ts-node src/app.ts"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "@types/node": "^15.12.4",
+    "express": "^4.17.1",
     "express-graphql": "^0.12.0",
     "graphql": "^15.5.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12"
   }
 }
